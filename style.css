@@ -13,9 +13,10 @@
 
 nav{
     position: fixed;
-    background-color: #1b1b1b;
+    background-color: rgba(0,0,0,0.8);
     width: 100%;
     padding: 10px 0;
+    z-index: 1;
 
 }
 
@@ -53,7 +54,7 @@ nav .menu{
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu ul li a:hover{
@@ -73,5 +74,76 @@ nav .menu{
     .menu ul li {
         padding-top: 5px;
         text-align: center;
+        border-bottom: 1px solid white;
+
     }
+    .menu ul li a:hover{
+        background:none;
+        font-size: 20px;
+        color: #fff;
+    }
+    .center{
+        width: 100%;
+        margin-top: 70px;
+    }
+}
+
+.img{
+    background: url('https://media.macphun.com/img/uploads/macphun/blog/2183/william-thomas-ny6tO4ItOEY-unsplash.jpg')no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.center{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .title{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+}
+.center .sub-title{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.center .btns{
+    margin-top: 50px;
+}
+
+.center .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.btns button:first-child{
+    background:none;
+    color: #fff;
+}
+.btns button:first-child:hover{
+    background-color: #fff;
+    color: black;
+}
+.btns button:last-child:hover{
+    background: none;
+    color: #fff;
 }
